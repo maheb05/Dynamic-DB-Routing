@@ -31,6 +31,7 @@ public class DataSourceConfig {
         dataSources.put("maindb", createDataSource("maindb"));
         dataSources.put("princedb", createDataSource("princedb"));
         dataSources.put("kingdb", createDataSource("kingdb"));
+        dataSources.put("slavedb", createDataSource("slavedb"));
 
         DynamicRoutingDataSource routingDataSource = new DynamicRoutingDataSource();
         routingDataSource.setTargetDataSources(dataSources);
