@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: dynamicrouting
+
+  datasource:
+    maindb:
+      url: jdbc:mysql://localhost:3306/main
+      username: root
+      password: #####
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    princedb:
+      url: jdbc:mysql://localhost:3306/prince
+      username: root
+      password: #####
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    kingdb:
+      url: jdbc:mysql://localhost:3306/king
+      username: root
+      password: #####
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    slave:
+      url: jdbc:mysql://localhost:3306/slave
+      username: root
+      password: #####
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+# Optional (for logging queries etc.)
+logging:
+  level:
+    org.hibernate.SQL: debug
